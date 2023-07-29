@@ -25,7 +25,7 @@ def mathoperation():
 
 @app.route('/calculate',methods=['POST'])
 def mathoperation2():
-    if request.content_type
+   
     operation=str(request.form["operation"])
     num1=int(request.form["num1"])
     num2=int(request.form["num2"])
