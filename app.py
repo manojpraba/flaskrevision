@@ -1,4 +1,4 @@
-from flask import Flask, request,render_template,url_for
+from flask import Flask, request,render_template,url_for,jsonify
 
 app =Flask(__name__)
 
@@ -20,7 +20,7 @@ def mathoperation():
         result=num1/num2
     else:
         result=num1-num2
-    return "The result is"+ result
+    return jsonify (result)
 
 if __name__ == '__main__':
     app.run(debug=True)
